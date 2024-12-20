@@ -1,6 +1,6 @@
 {
-	"name": "n8n-nodes-youtube-transcript",
-	"version": "1.0.0",
+	"name": "n8n-nodes-youtube-transcription",
+	"version": "1.0.1",
 	"description": "A custom n8n node for fetching YouTube video transcripts using the youtube-transcript library.",
 	"keywords": [
 		"n8n-community-node-package",

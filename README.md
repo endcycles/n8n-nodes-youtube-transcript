@@ -1,6 +1,12 @@
 # YouTube Transcript Node for n8n
 
-This is a custom node for n8n that retrieves the transcript of a YouTube video using its video ID. It integrates the functionality provided by the `youtube-transcript` library.
+This is a custom node for n8n that retrieves the transcript of a YouTube video using its video ID. It integrates the functionality provided by the `youtube-transcription` library.
+
+## Disclaimers
+
+This project is intended **solely for local use** and should be utilized for **testing, learning, or educational purposes only**. By using this project, you agree that all usage is entirely at your own risk, and the author holds **no responsibility** for any outcomes, issues, or liabilities resulting from its use.
+
+It is your responsibility to ensure that your use of this project complies with all applicable laws, regulations, and platform guidelines, including but not limited to YouTube's Terms of Service and Community Guidelines. Use responsibly and ethically.
 
 ## Features
 - Fetches the transcript of a YouTube video.
