@@ -1,0 +1,57 @@
+{
+	"name": "n8n-nodes-youtube-transcript",
+	"version": "1.0.0",
+	"description": "A custom n8n node for fetching YouTube video transcripts using the youtube-transcript library.",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n"
+	],
+	"license": "MIT",
+	"homepage": "",
+	"author": {
+		"name": "Leonardo Grigorio Araujo",
+		"email": "leonardogrig@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leonardogrig/n8n-nodes-youtube-transcript"
+	},
+	"engines": {
+		"node": ">=18.10",
+		"pnpm": ">=9.1"
+	},
+	"packageManager": "pnpm@9.1.4",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc && gulp build:icons",
+		"dev": "tsc --watch",
+		"format": "prettier nodes --write",
+		"lint": "eslint nodes package.json",
+		"lintfix": "eslint nodes package.json --fix",
+		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes package.json"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"nodes": [
+			"dist/nodes/CustomNode/YoutubeTranscripter.node.js"
+		]
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "^7.15.0",
+		"eslint": "^8.56.0",
+		"eslint-plugin-n8n-nodes-base": "^1.16.1",
+		"gulp": "^4.0.2",
+		"n8n-workflow": "*",
+		"prettier": "^3.3.2",
+		"typescript": "^5.5.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"dependencies": {
+		"youtube-transcript": "^1.2.1"
+	}
+}
