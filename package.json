@@ -1,10 +1,13 @@
 {
 	"name": "n8n-nodes-youtube-transcription",
 	"version": "1.0.1",
-	"description": "A custom n8n node for fetching YouTube video transcripts using the youtube-transcript library.",
+	"description": "A custom n8n node for fetching YouTube video transcripts using yt-dlp.",
 	"keywords": [
 		"n8n-community-node-package",
-		"n8n"
+		"n8n",
+		"youtube",
+		"transcript",
+		"yt-dlp"
 	],
 	"license": "MIT",
 	"homepage": "",
@@ -52,6 +55,6 @@
 		"n8n-workflow": "*"
 	},
 	"dependencies": {
-		"youtube-transcript": "^1.2.1"
+		"yt-dlp-wrap": "^2.3.11"
 	}
 }
